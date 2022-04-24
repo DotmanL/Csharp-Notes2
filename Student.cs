@@ -13,13 +13,13 @@ namespace LearningCsharp2
         public int Grade { get; set; }
 
 
-        //dfeined constructor
+        //defined constructor
 
         public Student (string fName, string lName, int grade)
         {
-            this.FirstName = fName;
-            this.LastName = lName;
-            this.Grade = grade;
+            FirstName = fName;
+            LastName = lName;
+            Grade = grade;
         }
 
         public void ShowStudent()
