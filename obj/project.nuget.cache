@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o6r1B+wAaAHFljKrqOVn9G2MpztHofHuBBKJ/2aMF+iCBiDnva6vLSArLxCrKTpItRPyQwNkN5D8zFAXWBv4pg==",
+  "dgSpecHash": "cQ4myNQ/XgnVspaTB9yeIStS8CrJHReWbgNI76W4iCOOj9xnJB8TJIIwoppkAHl0uYnpTqJDbQWZazwmWe3qaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dotman\\Desktop\\LearningCsharp2\\LearningCsharp2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\olado\\Desktop\\Personal\\Csharp-Notes2\\LearningCsharp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\olado\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

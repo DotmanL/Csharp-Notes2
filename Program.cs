@@ -177,7 +177,10 @@ namespace LearningCsharp2
             // SortedList - stores keys and value pairs
             // Stack - stores the values in LIFO style, (LAST IN FIRST OUT)
             // Queue - stores the values in FIFO style (FIRST IN FIRST OUT)
+
             // Hashtable - stores key and value pairs
+
+
 
             //Array Lists -- non gernic type of collection, it grows automatically, no need to specify the size of ann array list
 
@@ -208,13 +211,47 @@ namespace LearningCsharp2
             myValues.Clear();
             
 
-            //ArrayList allocates memories for items in four, ie: memeory for items are allocated, when a 5th item is added, memory for another 4items are added
+            //ArrayList allocates memories for items in four, ie: memory for items are allocated, when a 5th item is added, memory for another 4items are added
 
 
             foreach (var value in myValues)
             {
                 Console.WriteLine(value);
             }
+
+            //Sorted Lists -- stores key-value pairs in the ascending order of  the key, elements can accessed by key and index
+            // cannot have different key types
+            
+            SortedList sl1 = new SortedList();
+            sl1.Add("3", "Number Three");
+            sl1.Add("4", "Number Four");
+            sl1.Add("1", "Number One");
+            sl1.Add("5", "Number Five");
+            sl1.Add("2", "Number Two");
+
+            string specificValue = (string)sl1["4"];
+            Console.WriteLine($"Value: {specificValue}");
+
+           // sl1.Remove("4");
+            sl1.RemoveAt(0);
+
+            Console.WriteLine($"Contains() - {sl1.Contains("3")}");
+            Console.WriteLine($"ContainsKey() - {sl1.Contains("4")}");
+
+            //Better alternative to the for loop below
+            foreach (DictionaryEntry element in sl1)
+            {
+                Console.WriteLine($"Key :  {element.Key}, Value: {element.Value}");
+            }
+   
+
+            //for (int i = 0; i < sl1.Count; i++)
+            //{
+            //    Console.WriteLine($"Key :  {sl1.GetKey(i)}, Value: {sl1.GetByIndex(i)}");
+            //}
+
+            //Stack - stores elements in LIFO style, last in, first out
+
 
         }
         enum WeekDays

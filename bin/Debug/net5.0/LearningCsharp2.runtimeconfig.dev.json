@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Dotman\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Dotman\\.nuget\\packages"
+      "C:\\Users\\olado\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\olado\\.nuget\\packages"
     ]
   }
 }
