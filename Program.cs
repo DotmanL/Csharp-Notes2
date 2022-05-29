@@ -250,7 +250,54 @@ namespace LearningCsharp2
             //    Console.WriteLine($"Key :  {sl1.GetKey(i)}, Value: {sl1.GetByIndex(i)}");
             //}
 
-            //Stack - stores elements in LIFO style, last in, first out
+            //Stack - stores elements in LIFO style, last in, first out 
+            Stack myStack = new Stack();
+            myStack.Push("Hello there");
+            myStack.Push(1);
+            myStack.Push(2);
+            myStack.Push(3);
+            myStack.Push(4.5);
+            myStack.Push(null);
+            myStack.Push("End of Stack");
+
+            Console.WriteLine($"The peak of the stack is -{myStack.Peek()}");
+            Console.WriteLine($"The peak of the stack is -{myStack.Pop()}"); //removes element one by one, 
+            Console.WriteLine($"myStack has a 3 => {myStack.Contains(3)} ");
+            myStack.Clear(); //removes all element
+
+
+            foreach ( var stackItem in myStack)
+            {
+                Console.WriteLine(stackItem);
+            }
+
+            //Calling the
+            //
+            //peek method on empty stack will throw invalid operation exception
+
+            //Queue is the opposite of a stack collection, stores element in FIFO style, first in first out
+            ///add element using enqueue
+            
+           Queue myQueue = new Queue();
+            myQueue.Enqueue(1);
+            myQueue.Enqueue(1);
+            myQueue.Enqueue(31);
+            myQueue.Enqueue("This is my string");
+            myQueue.Enqueue(null);
+            myQueue.Enqueue("This is the last value");
+
+            Console.WriteLine($"Number of Elements = {myQueue.Count}");
+            //foreach(var element in myQueue)
+            //{
+            //    Console.WriteLine(element);
+            //}
+
+            //while (myQueue.Count > 0)
+                //Console.WriteLine(myQueue.Dequeue());
+
+            Console.WriteLine($"The peak of my queue is  {myQueue.Peek()}");
+            Console.WriteLine($"Value 30 exists in myQueue => {myQueue.Contains(30)}");
+            Console.WriteLine($"Number of elements = {myQueue.Count}");
 
 
         }
