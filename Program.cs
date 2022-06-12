@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace LearningCsharp2
 {
@@ -144,7 +145,7 @@ namespace LearningCsharp2
             //Inheritance is used to make application faster and simpler, we can build several types
             // based on a single abstraction, utlimate base class is the object class, 
 
-            //properties for each of the objet, both base and child classes
+            //properties for each of the object, both base and child classes
             Person person = new() { FullName = "john doe", Age = 25 };
             Console.WriteLine(person.GetDetails());
             Teacher teacher = new() { FullName = "peter doe", Age = 45, Subject="maths" };
@@ -276,7 +277,9 @@ namespace LearningCsharp2
             //peek method on empty stack will throw invalid operation exception
 
             //Queue is the opposite of a stack collection, stores element in FIFO style, first in first out
-            ///add element using enqueue
+            //add element using enqueue
+            //dequeue returns and remove top most element
+
             
            Queue myQueue = new Queue();
             myQueue.Enqueue(1);
@@ -299,7 +302,34 @@ namespace LearningCsharp2
             Console.WriteLine($"Value 30 exists in myQueue => {myQueue.Contains(30)}");
             Console.WriteLine($"Number of elements = {myQueue.Count}");
 
+            //HaashTable collection used to store key-value pairs
+            //key and value can be of any data type, keys cannot be null
+            Hashtable myHashtable = new();
+            myHashtable.Add(1, "One");
+            myHashtable.Add(2, "One");
+            
+            //can also be initialized using a dictionary  as below,
+            //Hashtable elements are key-value pairs stored in DictionaryEntry
 
+            Dictionary<int, string> myDictionary = new();
+            myDictionary.Add(1, "One");
+            myDictionary.Add(2, "Two");
+
+            Hashtable myHashtable2 = new(myDictionary);
+            string valueOfOne = (string)myHashtable2[1];
+            Console.WriteLine(valueOfOne);
+
+            myHashtable2.Remove(1);
+         
+            foreach ( DictionaryEntry value in myHashtable)
+            {
+                Console.WriteLine($"Key: {value.Key}, Value: {value.Value}");
+            }
+
+       // Indexers allow instances of a class or struct to be indexed just like arrays 
+       // Define an indexer by dclaring an array, deigne the [] notation 
+
+             
         }
         enum WeekDays
         {
